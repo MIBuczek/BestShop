@@ -1,1 +1,1 @@
-# wro-fer-w-11-warszaty
+# wro-fer-w-11-warszaty-one-page-site
