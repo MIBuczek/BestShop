@@ -1,4 +1,4 @@
-Work-space-one-page-site
+# BEST SHOP - one page site.
 
 These are the scribbles workshops based on mapping the layout with Adobe XD.
 
