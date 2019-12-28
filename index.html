@@ -10,12 +10,23 @@
         <section>
             <nav class="container">
                 <div class="logo"><a href="https:/bestshop.com">Best Shop</a></div>
-                <ul>
+                <ul class="nav-list">
                     <li class="active"><a href="#why-us">WHY US</a></li>
                     <li><a href="#benefits">BENEFITS</a></li>
                     <li><a href="#prices">PRICES</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
+                <div class="hamburger active" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    <ul class="show">
+                        <li class="active"><a href="#why-us">WHY US</a></li>
+                        <li><a href="#benefits">BENEFITS</a></li>
+                        <li><a href="#prices">PRICES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </nav>
         </section>
         <section>
@@ -86,41 +97,53 @@
                 </div>
                 <div class="option-price">
                     <div class="basic">
-                        <h4>Basic</h4>
-                        <p>$0</p>
-                        <ul>
-                            <li>100 MB HDD</li>
-                            <li>1 Subdomain</li>
-                            <li>2 E-mails</li>
-                            <li>Two years licence</li>
-                            <li>Full support</li>
-                        </ul>
+                        <div class="one">
+                            <h4>Basic</h4>
+                            <p>$0</p>
+                        </div>
+                        <div class="one">
+                            <ul>
+                                <li>100 MB HDD</li>
+                                <li>1 Subdomain</li>
+                                <li>2 E-mails</li>
+                                <li>Two years licence</li>
+                                <li>Full support</li>
+                            </ul>
+                        </div>
                         <button>Begin</button>
                     </div>
                     <div class="profesional">
-                        <h4>Profesional</h4>
-                        <p>$25</p>
-                        <span>Limited offer</span>
-                        <ul>
-                            <li>500 MB HDD</li>
-                            <li>2 Subdomain</li>
-                            <li>5 E-mails</li>
-                            <li>One year licence</li>
-                            <li>Full support</li>
-                        </ul>
+                        <div class="one">
+                            <h4>Profesional</h4>
+                            <p>$25</p>
+                            <span>Limited offer</span>
+                        </div>
+                        <div class="one">
+                            <ul>
+                                <li>500 MB HDD</li>
+                                <li>2 Subdomain</li>
+                                <li>5 E-mails</li>
+                                <li>One year licence</li>
+                                <li>Full support</li>
+                            </ul>
+                        </div>
                         <button>Begin</button>
                     </div>
                     <div class="premium">
-                        <h4>Premium</h4>
-                        <p>$60</p>
-                        <span>Limited offer</span>
-                        <ul>
-                            <li>2 GB HDD</li>
-                            <li>5 Subdomain</li>
-                            <li>20 E-mails</li>
-                            <li>Two year licence</li>
-                            <li>Full support</li>
-                        </ul>
+                        <div class="one">
+                            <h4>Premium</h4>
+                            <p>$60</p>
+                            <span>Limited offer</span>
+                        </div>
+                        <div class="one">
+                            <ul>
+                                <li>2 GB HDD</li>
+                                <li>5 Subdomain</li>
+                                <li>20 E-mails</li>
+                                <li>Two year licence</li>
+                                <li>Full support</li>
+                            </ul>
+                        </div>
                         <button>Begin</button>
                     </div>
                 </div>
@@ -175,5 +198,10 @@
                 </div>
             </footer>
         </section>
+        <script>
+            function myFunction(x) {
+            x.classList.toggle("change");
+            }
+        </script>
     </body>
 </html>
