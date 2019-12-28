@@ -10,7 +10,7 @@ body {
 }
 
 section {
-    width: 100vw;
+    width: 99vw;
 }
 
 section:first-of-type {
@@ -42,7 +42,7 @@ section:last-of-type {
 
 
 .container{
-    width: 1352px;
+    max-width: 1352px;
     margin: 0 auto;
 }
 
@@ -77,7 +77,10 @@ nav li a {
     text-decoration: none;
     color: gray;
 }
-
+.hamburger,
+.hamburger ul{
+    display: none;
+}
 
 nav li:hover {
     color:black;
@@ -148,9 +151,9 @@ header button a {
 .icones-img {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-right: 200px;
-    padding-left: 200px;
+    justify-content: space-evenly;
+    padding-right: 100px;
+    padding-left: 100px;
 
 }
 
@@ -387,7 +390,7 @@ header button a {
 }
 
 .offert {
-    width: 1352px;
+    max-width: 1352px;
     height: 835px;
     display: flex;
     flex-direction: column;
@@ -415,7 +418,7 @@ header button a {
 .basic,
 .profesional,
 .premium {
-    width: 410px;
+    min-width: 410px;
     height: 530px;
     border: #FB3B64 2px solid;
     border-radius: 25px;
@@ -502,7 +505,7 @@ header button a {
     font-weight: bold;
     line-height: 40px;
     position: absolute;
-    left: 120px;
+    left: 38%;
     bottom: -25px;
     
 }
@@ -669,4 +672,113 @@ footer .logo {
     width: 24px;
     height: 24px;
     margin: 8px;
+}
+
+@media(max-width:1000px){
+    *{
+        padding: 0;
+    }
+    section:nth-of-type(2){
+        width: auto;
+    }
+    .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    height: auto;
+    }
+    .hamburger a{
+        display: block;
+    }
+
+    .bar1, .bar2, .bar3 {
+    display: flex;
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    }
+
+    .change .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+    }
+    .nav-list{
+        display: none;
+    }
+    .icones,
+    .your-brand,
+    .offer,
+    .form,
+    .form-input{
+        flex-direction: column;
+        width: 99%;
+        height: auto;
+    }
+    .icones{
+        justify-self: center;
+    }
+    .option-price,
+    .icones-img{
+        flex-direction: column;
+    }
+    .be-always,
+    .your-shop,
+    .your-brand{
+        width: 90vw;
+    }
+    .your-brand-text,
+    .your-brand-img{
+        width: 99%;
+
+    }
+    .basic,
+    .profesional,
+    .premium{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: auto;
+        align-items: center;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .one{
+        width:49%;
+    }
+
+    .be-always,
+    .your-shop{
+        flex-direction: column;
+        width: 99vw !important;
+        height: auto; 
+    }
+    .be-always-text{
+        max-height: 320px;
+    }
+    .form-info,
+    .form-input,
+    .info-icone,
+    .input-checkbox{
+        width: 80%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+    .info-icone i{
+        display: block;
+        padding-top:20px;
+    }
+    .show{
+        display: block;
+        width: 99%;
+        height: 40vh;
+    }
 }
